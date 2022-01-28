@@ -1,0 +1,835 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .hero {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-radius: 0 0 0 6rem;
+  height: 85vh;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 476px) {
+  body .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+    background: linear-gradient(#ff8f70, #ff3d54);
+  }
+}
+
+body .hero main {
+  background: url(../images/bg-pattern-intro-desktop.svg);
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+
+@media only screen and (max-width: 476px) {
+  body .hero main {
+    background: url(../images/bg-pattern-intro-mobile.svg);
+    background-position: 35% 30%;
+    background-repeat: no-repeat;
+  }
+}
+
+body .hero main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 1.5rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 475.99999px) {
+  body .hero main header {
+    padding: 4rem 10rem;
+  }
+}
+
+body .hero main header .logo {
+  width: 12%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .hero main header .logo img {
+  height: 2.2rem;
+}
+
+@media only screen and (min-width: 475.99999px) {
+  body .hero main header .logo img {
+    height: 2.5rem;
+  }
+}
+
+body .hero main header .ham-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 476px) {
+  body .hero main header .ham-menu {
+    display: none;
+  }
+}
+
+body .hero main header .ham-menu .close {
+  display: none;
+}
+
+body .hero main header .ham .open {
+  display: none;
+}
+
+body .hero main header .ham .close {
+  display: block;
+}
+
+body .hero main header .navbar {
+  width: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .hero main header .navbar a {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body .hero main header .navbar .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+body .hero main header .navbar .nav-left .nav-container .nav-heading {
+  position: relative;
+}
+
+body .hero main header .navbar .nav-left .nav-container .nav-heading .dark {
+  display: none;
+}
+
+body .hero main header .navbar .nav-left .nav-container .nav-heading .lrot {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body .hero main header .navbar .nav-left .nav-container .nav-heading a {
+  color: white;
+  margin-right: 0.15rem;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 475.9999px) {
+  body .hero main header .navbar .nav-left .nav-container .nav-heading a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+body .hero main header .navbar .nav-left .nav-container .nav-list {
+  background: white;
+  padding: 1.7rem;
+  padding-right: 2.5rem;
+  border-radius: 0.25rem;
+  display: none;
+}
+
+@media only screen and (min-width: 475.99999px) {
+  body .hero main header .navbar .nav-left .nav-container .nav-list {
+    position: absolute;
+    top: 70%;
+  }
+}
+
+body .hero main header .navbar .nav-left .nav-container .nav-list a {
+  font-size: 0.9rem;
+  color: #1f3f5b;
+}
+
+@media only screen and (min-width: 475.9999px) {
+  body .hero main header .navbar .nav-left .nav-container .nav-list a:hover {
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+body .hero main header .navbar .nav-left .drop1 .nav-list {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .hero main header .navbar .nav-left .drop2 .nav-list {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .hero main header .navbar .nav-left .drop3 .nav-list {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .hero main header .navbar .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+
+body .hero main header .navbar .nav-right a {
+  color: white;
+  font-weight: 600;
+}
+
+body .hero main header .navbar .nav-right a:nth-last-of-type(1) {
+  color: #ff525d;
+  padding: 0.8rem 2.3rem;
+  background: white;
+  border-radius: 5rem;
+  font-weight: 600;
+}
+
+body .hero main header .navbar .nav-right a:nth-last-of-type(1):hover {
+  background: #ff7a85;
+  color: white;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 476px) {
+  body .hero main header .navbar {
+    position: absolute;
+    display: none;
+    top: 7rem;
+  }
+  body .hero main header .navbar .nav-left .nav-container .nav-heading .light {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  body .hero main header .visible {
+    display: block;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 11px 44px -22px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 11px 44px -22px rgba(0, 0, 0, 0.75);
+    margin-top: 1.5rem;
+  }
+  body .hero main header .visible .nav-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .hero main header .visible .nav-left .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-heading a {
+    font-size: 1.3rem;
+    color: #1f3f5b;
+    font-weight: 600;
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-heading .dark {
+    display: block;
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-heading .drot {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-heading .light {
+    display: none;
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-list {
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: #e6e6e6;
+    gap: 1.5rem;
+    z-index: 1;
+  }
+  body .hero main header .visible .nav-left .nav-container .nav-list a {
+    color: #1f3f5b;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  body .hero main header .visible .nav-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 2px solid #c8c8cb;
+    width: 100%;
+    padding: 2rem 0 0.5rem;
+  }
+  body .hero main header .visible .nav-right a:nth-of-type(1) {
+    color: #1f3f5b;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  body .hero main header .visible .nav-right a:nth-of-type(2) {
+    background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+    background: linear-gradient(to right, #ff8f70, #ff3d54);
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2.7rem;
+    font-weight: 600;
+  }
+}
+
+body .hero main .text {
+  text-align: center;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  margin-top: 3rem;
+}
+
+body .hero main .text .text-container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+body .hero main .text .text-container h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .hero main .text .text-container h1 {
+    font-size: 3.5rem;
+  }
+}
+
+body .hero main .text .text-container p {
+  font-size: 1.1rem;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 3.5rem;
+  font-weight: 300;
+}
+
+body .hero main .text .text-container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+body .hero main .text .text-container .btn button {
+  background: white;
+  border: none;
+  outline: none;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ff525d;
+}
+
+body .hero main .text .text-container .btn button:hover {
+  background: #ff7a85;
+  color: white;
+}
+
+body .hero main .text .text-container .btn button:nth-of-type(2) {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+body .hero main .text .text-container .btn button:nth-of-type(2):hover {
+  background: white;
+  color: #ff525d;
+}
+
+body .future {
+  padding: 6rem 0 20rem;
+  overflow: hidden;
+}
+
+body .future .future-container .fut-heading {
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  color: #1f3f5b;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .fut-heading {
+    font-size: 2.2rem;
+  }
+}
+
+body .future .future-container .future-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+body .future .future-container .future-flex .future-image {
+  margin-top: 3rem;
+  position: relative;
+  display: block;
+}
+
+body .future .future-container .future-flex .future-image .fut-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex .future-image .fut-desk {
+    display: block;
+    position: absolute;
+    right: -15rem;
+    top: -11rem;
+  }
+}
+
+body .future .future-container .future-flex .future-image .fut-mob {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex .future-image .fut-mob {
+    display: none;
+  }
+}
+
+body .future .future-container .future-flex .future-content {
+  max-width: 86%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex .future-content {
+    padding: 6rem 0 6rem 10rem;
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+body .future .future-container .future-flex .future-content .editor,
+body .future .future-container .future-flex .future-content .robust {
+  text-align: center;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex .future-content .editor,
+  body .future .future-container .future-flex .future-content .robust {
+    text-align: left;
+  }
+}
+
+body .future .future-container .future-flex .future-content .editor h1,
+body .future .future-container .future-flex .future-content .robust h1 {
+  line-height: 2rem;
+  font-family: "Overpass", sans-serif;
+  color: #1f3f5b;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex .future-content .editor h1,
+  body .future .future-container .future-flex .future-content .robust h1 {
+    font-size: 1.7rem;
+  }
+}
+
+body .future .future-container .future-flex .future-content .editor p,
+body .future .future-container .future-flex .future-content .robust p {
+  font-size: 1.1rem;
+  font-family: "Overpass", sans-serif;
+  line-height: 2rem;
+  margin-top: 1.3rem;
+  color: #4b5862;
+}
+
+@media only screen and (min-width: 476px) {
+  body .future .future-container .future-flex .future-content .editor p,
+  body .future .future-container .future-flex .future-content .robust p {
+    max-width: 40%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+body .future .future-container .future-flex .future-content .robust {
+  margin-top: 3.5rem;
+}
+
+body .infrastructure {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: linear-gradient(#2c2d3f, #3f4164);
+  border-radius: 0 6rem 0 6rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 476px) {
+  body .infrastructure {
+    background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+    background: linear-gradient(to right, #2c2d3f, #3f4164);
+  }
+}
+
+body .infrastructure .mob-phone {
+  position: absolute;
+  max-width: 100%;
+  top: -10rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .infrastructure .mob-phone {
+    top: -4rem;
+    left: 6rem;
+  }
+}
+
+body .infrastructure .infra-container {
+  padding: 15rem 2rem 9rem;
+  border-radius: 0 7rem 0 7rem;
+  background: url(../images/bg-pattern-circles.svg);
+  background-position: 50% 180%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@media only screen and (min-width: 476px) {
+  body .infrastructure .infra-container {
+    text-align: left;
+    padding: 8rem 2rem 8rem 50rem;
+    background-position: -30% 80%;
+  }
+}
+
+body .infrastructure .infra-container h1 {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 2.5rem;
+}
+
+body .infrastructure .infra-container p {
+  color: #c8c8cb;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+
+@media only screen and (min-width: 476px) {
+  body .infrastructure .infra-container p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+}
+
+body .free {
+  padding: 4rem 0 6rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .free {
+    padding: 7rem 0 5rem;
+  }
+}
+
+body .free .free-container .free-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 476px) {
+  body .free .free-container .free-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.5rem;
+  }
+}
+
+body .free .free-container .free-flex .free-image .free-mob {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body .free .free-container .free-flex .free-image .free-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 476px) {
+  body .free .free-container .free-flex .free-image .free-desk {
+    display: block;
+    margin-left: -13.5rem;
+  }
+  body .free .free-container .free-flex .free-image .free-mob {
+    display: none;
+  }
+}
+
+body .free .free-container .free-flex .free-content {
+  max-width: 86%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+body .free .free-container .free-flex .free-content .open,
+body .free .free-container .free-flex .free-content .powerful {
+  text-align: center;
+}
+
+@media only screen and (min-width: 476px) {
+  body .free .free-container .free-flex .free-content .open,
+  body .free .free-container .free-flex .free-content .powerful {
+    text-align: left;
+  }
+}
+
+body .free .free-container .free-flex .free-content .open h1,
+body .free .free-container .free-flex .free-content .powerful h1 {
+  line-height: 2rem;
+  font-family: "Overpass", sans-serif;
+  color: #1f3f5b;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body .free .free-container .free-flex .free-content .open h1,
+  body .free .free-container .free-flex .free-content .powerful h1 {
+    font-size: 1.7rem;
+  }
+}
+
+body .free .free-container .free-flex .free-content .open p,
+body .free .free-container .free-flex .free-content .powerful p {
+  font-size: 1.1rem;
+  font-family: "Overpass", sans-serif;
+  line-height: 2rem;
+  margin-top: 1.3rem;
+  color: #4b5862;
+}
+
+@media only screen and (min-width: 476px) {
+  body .free .free-container .free-flex .free-content .open p,
+  body .free .free-container .free-flex .free-content .powerful p {
+    max-width: 75%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+body .free .free-container .free-flex .free-content .powerful {
+  margin-top: 3.5rem;
+}
+
+body footer {
+  background: #25252d;
+  border-radius: 0 6rem 0 0;
+  padding: 4rem 0;
+}
+
+@media only screen and (min-width: 476px) {
+  body footer {
+    padding: 4rem 10rem;
+  }
+}
+
+body footer .footer-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body footer .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12rem;
+    text-align: left;
+  }
+}
+
+body footer .footer-container .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body footer .footer-container .footer-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15rem;
+    margin-top: 0.8rem;
+  }
+}
+
+body footer .footer-container .footer-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+body footer .footer-container .footer-content ul h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body footer .footer-container .footer-content ul h1 {
+    font-size: 1rem;
+  }
+}
+
+body footer .footer-container .footer-content ul li a {
+  text-decoration: none;
+  color: #c8c8cb;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 476px) {
+  body footer .footer-container .footer-content ul li a {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
